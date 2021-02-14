@@ -1,5 +1,6 @@
 import AboutUs from "./pages/AboutUs";
 import Nav from "./component/Nav";
+import NavToggle from "./component/NavToggle";
 import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
 import MovieDetail from "./pages/MovieDetail";
@@ -17,7 +18,7 @@ function App() {
       {/* <Router> */}
       <GlobalStyle />
       <Nav />
-
+      <NavToggle />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact>

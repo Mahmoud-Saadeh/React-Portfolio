@@ -12,8 +12,8 @@ import {
   fade,
   imageAnim,
   lineAnim,
-  slider,
-  slidercontrol,
+  // slider,
+  // slidercontrol,
   movieContainer,
 } from "../animation";
 import { useScroll } from "../component/useScroll";
@@ -105,6 +105,8 @@ const Movie = styled(motion.div)`
     width: 100%;
     height: 70vh;
     object-fit: cover;
+    background-position: center;
+    background-size: cover;
   }
 `;
 

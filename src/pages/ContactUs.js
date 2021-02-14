@@ -11,6 +11,7 @@ import {
   faTwitter,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 library.add(faFacebook);
 library.add(faTwitter);
@@ -43,7 +44,9 @@ const ContactUs = () => {
           <Social variants={titleAnim}>
             <div>
               <Circle />
-              <h2>Send an Email</h2>
+              <h2>
+                Send an Email: <br /> Example@example.com
+              </h2>
             </div>
           </Social>
         </Hide>
@@ -55,23 +58,27 @@ const ContactUs = () => {
             </div>
 
             <motion.div variants={titleAnim} className="social">
-              <FontAwesomeIcon
-                className="icon"
-                size="2x"
-                icon={["fab", "facebook"]}
-              />
-
-              <FontAwesomeIcon
-                className="icon"
-                size="2x"
-                icon={["fab", "twitter"]}
-              />
-
-              <FontAwesomeIcon
-                className="icon"
-                size="2x"
-                icon={["fab", "linkedin-in"]}
-              />
+              <Link to="#">
+                <FontAwesomeIcon
+                  className="icon"
+                  size="2x"
+                  icon={["fab", "facebook"]}
+                />
+              </Link>
+              <Link to="#">
+                <FontAwesomeIcon
+                  className="icon"
+                  size="2x"
+                  icon={["fab", "twitter"]}
+                />
+              </Link>
+              <Link to="#">
+                <FontAwesomeIcon
+                  className="icon"
+                  size="2x"
+                  icon={["fab", "linkedin-in"]}
+                />
+              </Link>
             </motion.div>
           </Social>
         </Hide>
@@ -83,7 +90,7 @@ const ContactUs = () => {
 
 const ContactStyle = styled(motion.div)`
   min-height: 90vh;
-  padding: 5rem;
+  padding: 2.5rem 5rem 2.5rem 5rem;
   /* color: #353535; */
   color: white;
   @media (max-width: 797px) {
@@ -115,6 +122,7 @@ const Social = styled(motion.div)`
   h2 {
     margin: 2rem;
     font-size: 2rem;
+    line-height: 1.5;
     color: #fff;
     font-weight: bold;
   }

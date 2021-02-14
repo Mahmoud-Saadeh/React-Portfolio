@@ -62,7 +62,7 @@ const HeadLine = styled.div`
     transform: translate(-50%, -10%);
   }
   img {
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
   }

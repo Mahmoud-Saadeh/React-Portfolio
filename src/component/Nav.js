@@ -70,6 +70,7 @@ const StyledNav = styled.nav`
   ul {
     display: flex;
     list-style: none;
+
     /* justify-content: start; */
   }
   #logo {
@@ -84,13 +85,17 @@ const StyledNav = styled.nav`
     position: relative;
   }
   @media (max-width: 797px) {
-    flex-direction: column;
-
     ul {
+      /* display: flex;
+      justify-content: space-around;
+      margin: 1.5rem 0rem 0.5rem 0rem; */
+      display: none;
+    }
+    /* ul {
       display: flex;
       justify-content: space-around;
       margin: 1.5rem 0rem 0.5rem 0rem;
-    }
+    } */
   }
 `;
 const Line = styled(motion.div)`
